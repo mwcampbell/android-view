@@ -5,14 +5,12 @@ version = 4
 [[package]]
 name = "accesskit"
 version = "0.19.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e25ae84c0260bdf5df07796d7cc4882460de26a2b406ec0e6c42461a723b271b"
+source = "git+https://github.com/AccessKit/accesskit?branch=scrolling-wip#dfbce0c3576d736fd2568428c91a06809323b0ea"
 
 [[package]]
 name = "accesskit_android"
 version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0a220a811989b46e6b1ade0b96ab5d10a19f2890503dd449343797d2686589a7"
+source = "git+https://github.com/AccessKit/accesskit?branch=scrolling-wip#dfbce0c3576d736fd2568428c91a06809323b0ea"
 dependencies = [
  "accesskit",
  "accesskit_consumer",
@@ -23,8 +21,7 @@ dependencies = [
 [[package]]
 name = "accesskit_consumer"
 version = "0.28.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8bfae7c152994a31dc7d99b8eeac7784a919f71d1b306f4b83217e110fd3824c"
+source = "git+https://github.com/AccessKit/accesskit?branch=scrolling-wip#dfbce0c3576d736fd2568428c91a06809323b0ea"
 dependencies = [
  "accesskit",
  "hashbrown",
@@ -766,7 +763,7 @@ dependencies = [
 [[package]]
 name = "masonry"
 version = "0.3.0"
-source = "git+https://github.com/linebender/xilem#47722f4357fe7b7a595bb1f7815229bb1e9e38d9"
+source = "git+https://github.com/linebender/xilem?branch=virtual-scroll-a11y#f182f1809a0b92359b52947853f7bc4decd604bd"
 dependencies = [
  "accesskit",
  "cursor-icon",
@@ -796,7 +793,7 @@ dependencies = [
 [[package]]
 name = "masonry_core"
 version = "0.3.0"
-source = "git+https://github.com/linebender/xilem#47722f4357fe7b7a595bb1f7815229bb1e9e38d9"
+source = "git+https://github.com/linebender/xilem?branch=virtual-scroll-a11y#f182f1809a0b92359b52947853f7bc4decd604bd"
 dependencies = [
  "accesskit",
  "anymap3",
@@ -1623,7 +1620,7 @@ dependencies = [
 [[package]]
 name = "tree_arena"
 version = "0.1.0"
-source = "git+https://github.com/linebender/xilem#47722f4357fe7b7a595bb1f7815229bb1e9e38d9"
+source = "git+https://github.com/linebender/xilem?branch=virtual-scroll-a11y#f182f1809a0b92359b52947853f7bc4decd604bd"
 dependencies = [
  "hashbrown",
 ]

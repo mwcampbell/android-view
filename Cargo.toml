@@ -25,3 +25,8 @@ panic = "abort"
 
 [profile.release]
 panic = "abort"
+
+[patch.crates-io]
+accesskit = { git = "https://github.com/AccessKit/accesskit", branch = "scrolling-wip" }
+accesskit_android = { git = "https://github.com/AccessKit/accesskit", branch = "scrolling-wip" }
+accesskit_consumer = { git = "https://github.com/AccessKit/accesskit", branch = "scrolling-wip" }
