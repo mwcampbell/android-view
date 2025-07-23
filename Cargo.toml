@@ -25,3 +25,9 @@ panic = "abort"
 
 [profile.release]
 panic = "abort"
+
+[patch.crates-io]
+accesskit = { git = "https://github.com/AccessKit/accesskit", branch = "android-scroll-stresstest" }
+accesskit_android = { git = "https://github.com/AccessKit/accesskit", branch = "android-scroll-stresstest" }
+accesskit_consumer = { git = "https://github.com/AccessKit/accesskit", branch = "android-scroll-stresstest" }
+jni = { git = "https://github.com/mwcampbell/jni-rs", branch = "profiling" }

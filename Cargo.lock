@@ -5,29 +5,28 @@ version = 4
 [[package]]
 name = "accesskit"
 version = "0.21.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9c0690ad6e6f9597b8439bd3c95e8c6df5cd043afd950c6d68f3b37df641e27c"
+source = "git+https://github.com/AccessKit/accesskit?branch=android-scroll-stresstest#abc9cb7371ff98dc1fa645a212c72286c803ca81"
 
 [[package]]
 name = "accesskit_android"
 version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6436bf994fb0a84427a4caf9fce8a9b0c586c9ac4877de4bd9bd2aefda0e9e65"
+source = "git+https://github.com/AccessKit/accesskit?branch=android-scroll-stresstest#abc9cb7371ff98dc1fa645a212c72286c803ca81"
 dependencies = [
  "accesskit",
  "accesskit_consumer",
  "jni",
  "log",
+ "profiling",
 ]
 
 [[package]]
 name = "accesskit_consumer"
 version = "0.30.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ec27574c1baeb7747c802a194566b46b602461e81dc4957949580ea8da695038"
+source = "git+https://github.com/AccessKit/accesskit?branch=android-scroll-stresstest#abc9cb7371ff98dc1fa645a212c72286c803ca81"
 dependencies = [
  "accesskit",
  "hashbrown",
+ "profiling",
 ]
 
 [[package]]
@@ -641,14 +640,14 @@ checksum = "4a5f13b858c8d314ee3e8f639011f7ccefe71f97f96e50151fb991f267928e2c"
 [[package]]
 name = "jni"
 version = "0.21.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1a87aa2bb7d2af34197c04845522473242e1aa17c12f4935d5856491a7fb8c97"
+source = "git+https://github.com/mwcampbell/jni-rs?branch=profiling#fd3bdfe382ad610324e69a96dc8a58c842922067"
 dependencies = [
  "cesu8",
  "cfg-if",
  "combine",
  "jni-sys",
  "log",
+ "profiling",
  "thiserror 1.0.69",
  "walkdir",
  "windows-sys 0.45.0",
@@ -769,7 +768,7 @@ dependencies = [
 [[package]]
 name = "masonry"
 version = "0.3.0"
-source = "git+https://github.com/linebender/xilem#e14ba3a5f9461b403cb30d95826187fba7f6924b"
+source = "git+https://github.com/mwcampbell/xilem?branch=virtual-scroll-a11y-stresstest#9c81a48a3eec117d9a0c6638017cbb30a296a1ab"
 dependencies = [
  "accesskit",
  "cursor-icon",
@@ -795,7 +794,7 @@ dependencies = [
 [[package]]
 name = "masonry_core"
 version = "0.3.0"
-source = "git+https://github.com/linebender/xilem#e14ba3a5f9461b403cb30d95826187fba7f6924b"
+source = "git+https://github.com/mwcampbell/xilem?branch=virtual-scroll-a11y-stresstest#9c81a48a3eec117d9a0c6638017cbb30a296a1ab"
 dependencies = [
  "accesskit",
  "anymap3",
@@ -1154,9 +1153,9 @@ dependencies = [
 
 [[package]]
 name = "profiling"
-version = "1.0.16"
+version = "1.0.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "afbdc74edc00b6f6a218ca6a5364d6226a259d4b8ea1af4a0ea063f27e179f4d"
+checksum = "3eb8486b569e12e2c32ad3e204dbaba5e4b5b216e9367044f25f1dba42341773"
 dependencies = [
  "profiling-procmacros",
  "tracing",
@@ -1164,9 +1163,9 @@ dependencies = [
 
 [[package]]
 name = "profiling-procmacros"
-version = "1.0.16"
+version = "1.0.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a65f2e60fbf1063868558d69c6beacf412dc755f9fc020f514b7955fc914fe30"
+checksum = "52717f9a02b6965224f95ca2a81e2e0c5c43baacd28ca057577988930b6c3d5b"
 dependencies = [
  "quote",
  "syn",
@@ -1622,7 +1621,7 @@ dependencies = [
 [[package]]
 name = "tree_arena"
 version = "0.1.0"
-source = "git+https://github.com/linebender/xilem#e14ba3a5f9461b403cb30d95826187fba7f6924b"
+source = "git+https://github.com/mwcampbell/xilem?branch=virtual-scroll-a11y-stresstest#9c81a48a3eec117d9a0c6638017cbb30a296a1ab"
 dependencies = [
  "hashbrown",
 ]
